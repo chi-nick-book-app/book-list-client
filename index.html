@@ -11,69 +11,75 @@
     <link rel="stylesheet" href="./styles/modules.css">
     <link rel="icon" href="./styles/logo/cflogo.png">
 
-
     <script id="book-list-template" type="text/x-handlebars-template">
         <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
             <div id="book-list">
-          <section class="book-view">{{{body}}}</section>
-          <p><img/></p>
-        <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-
-        </div>
+                <section class="book-view">{{{body}}}</section>
+                <p><img/></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                
+            </div>
         </article>
-      </script>
+    </script>
 </head>
 
 <body>
-    <div id=header>
+    <div id="particles-js"></div>
+
+        <div id=header>
 
 
-        <h1>
-            <span id="logo"></span> LAB 11-HOME PAGE</h1>
+            <h1>
+                <span id="logo"></span> LAB 11-HOME PAGE</h1>
 
-        <div id=navbar>
-            <ul>
-                <li>
-                    <a href="#" class="icon-home">BOOKS APP</a>
-                </li>
-                <li>
-                    <a href="#" class="icon-home">ABOUT</a>
-                </li>
-                <li>
-                    <a href="#" class="icon-home">CONTACT US</a>
-                </li>
-            </ul>
+            <div id=navbar>
+                <ul>
+                    <li>
+                        <a href="#" class="icon-home">BOOKS APP</a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-home">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon-home">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <main>
-        <div>
-            <h1>Books App</h1>
+        <main>
+            <div>
+                <h1>Books App</h1>
 
-        </div>
-        <div id="book-display">
-            <section>
-                <P>
-                    <img id="book-img">
-                </P>
-                <p>Title: Dune</p>
-                <p>Author: Frank Herbert</p>
-                <p>ISBN: 9780441013593</p>
-                <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous
-                    desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny</p>
+            </div>
+            <div id="book-display">
+                <section>
+                    <P>
+                        <img id="book-img">
+                    </P>
+                    <p>Title: Dune</p>
+                    <p>Author: Frank Herbert</p>
+                    <p>ISBN: 9780441013593</p>
+                    <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on
+                        a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most
+                        unexpected destiny</p>
 
-        </div>
-        </section>
-    </main>
+                </section>
+        </main>
+
+        
 </body>
+
+<script src="./particles.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 <script src="scripts/models/book.js"></script>
 <script src="scripts/views/book-view.js"></script>
 <script src="scripts/views/error-view.js"></script>
+<script src="./app.js"></script>
 <script>
     Book.fetchAll(bookView.initIndexPage);
 </script>

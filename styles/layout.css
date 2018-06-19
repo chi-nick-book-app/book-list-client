@@ -1,13 +1,15 @@
 #header {
     width: 700px;
     background-color:#fff8;
-    border-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
     margin: 0px auto;
     
 }
 
 body {
-    width: 640px;
+  
     background-color: orange;
     height: 800px;
     margin: 0px auto;
@@ -16,6 +18,7 @@ body {
 main {
     background-color: #fff8;
     border-radius: 10px;
+    
     height: 800px;
     margin: 0px auto;
     width: 700px;
