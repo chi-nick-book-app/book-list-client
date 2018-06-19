@@ -36,7 +36,7 @@ Book.fetchAll = () => {
   
     } else {
       $.ajax({
-        url: 'data/books.json',
+        url: 'https://chi-nick-booklist.herokuapp.com/api/v1/books',
         method: 'GET',
         headers: {},
         success: function (data, message, xhr){

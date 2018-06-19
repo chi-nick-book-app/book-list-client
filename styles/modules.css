@@ -1,18 +1,15 @@
-
-#logo{
-    display:inline-block;
+#logo {
+    display: inline-block;
     background-image: url("./logo/cflogo.png");
     background-size: cover;
     width: 65px;
     height: 65px;
     opacity: 1;
-
 }
 
 #navbar>ul {
     display: block;
     text-align: center;
-    
 }
 
 #navbar ul li {
@@ -22,20 +19,31 @@
     background-color: darkgray;
     border-radius: 5px;
     box-shadow: 8px 2px 5px #6664;
-    margin-left : 10%;
+    margin-left: 10%;
     width: 20%;
-    
 }
 
-#navbar ul li:hover{
-    background-color:#9999;
+#navbar ul li:hover {
+    background-color: #9999;
     transition-duration: 300ms;
-    transform:scale(1.3);
+    transform: scale(1.3);
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-a:hover{
-    color:#6668;
+a:hover {
+    color: #6668;
+}
+
+#book-img {
+    display: block;
+    background-image: url("https://books.google.com/books/content?id=B1hSG45JCX4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api");
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    margin: 10px auto;
+    border:10px solid orange;
+    
 }

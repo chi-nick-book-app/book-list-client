@@ -14,15 +14,15 @@
 
     <script id="book-list-template" type="text/x-handlebars-template">
         <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
-          <header>
-            <h1>{{title}}</h1>
-            <div>
-              By <address><a href="{{authorUrl}}">{{author}}</a></address>
-              {{publishStatus}}
-            </div>
-          </header>
-          <section class="article-body">{{{body}}}</section>
-          <a href="#" class="read-on">Read on &rarr;</a>
+            <div id="book-list">
+          <section class="book-view">{{{body}}}</section>
+          <p><img/></p>
+        <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+
+        </div>
         </article>
       </script>
 </head>
@@ -49,9 +49,23 @@
         </div>
     </div>
     <main>
-        <div id="book-display">
+        <div>
             <h1>Books App</h1>
+
         </div>
+        <div id="book-display">
+            <section>
+                <P>
+                    <img id="book-img">
+                </P>
+                <p>Title: Dune</p>
+                <p>Author: Frank Herbert</p>
+                <p>ISBN: 9780441013593</p>
+                <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous
+                    desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny</p>
+
+        </div>
+        </section>
     </main>
 </body>
 

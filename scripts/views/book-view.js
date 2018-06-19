@@ -5,11 +5,8 @@ let bookView = {};
 
 
 bookView.initNewArticlePage = () => {
-    $('.tab-content').show();
-    $('#export-field').hide();
-    $('#article-json').on('focus', function () {
-        this.select();
-    });
+    $('.book-view').show();
+   
 
 
 
