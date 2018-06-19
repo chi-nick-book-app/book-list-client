@@ -1,0 +1,12 @@
+body {
+    max-width: 640px;
+    margin: 0px auto;
+    background-color: orange;
+}
+
+body>div {
+    background-color: whitesmoke;
+    opacity: 0.6;
+    border-radius: 10px;
+    height: 800px;
+}

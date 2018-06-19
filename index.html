@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chi &amp;Nick's Book App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/modules.css">
+    <link rel="icon" href="./styles/logo/cflogo.png">
+
+
+    <script id="book-list-template" type="text/x-handlebars-template">
+        <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
+          <header>
+            <h1>{{title}}</h1>
+            <div>
+              By <address><a href="{{authorUrl}}">{{author}}</a></address>
+              {{publishStatus}}
+            </div>
+          </header>
+          <section class="article-body">{{{body}}}</section>
+          <a href="#" class="read-on">Read on &rarr;</a>
+        </article>
+      </script>
 </head>
+
 <body>
-    <h1>BOOK APP</h1>
+    <div>
+        <h1>BOOK APP</h1>
+        <div id=navbar>
+            <ul>
+                <li>BOOKS APP</li>
+                <li>ABOUT</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script src="scripts/models/book.js"></script>
+<script src="scripts/views/book-view.js"></script>
+<script src="scripts/views/error-view.js"></script>
+<script>
+    Book.fetchAll(bookView.initIndexPage);
+</script>
+
 </html>
