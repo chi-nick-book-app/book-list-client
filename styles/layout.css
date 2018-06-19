@@ -14,8 +14,7 @@ body {
 }
 
 main {
-    background-color: whitesmoke;
-    opacity: 0.6;
+    background-color: #fff8;
     border-radius: 10px;
     height: 800px;
     margin: 0px auto;
@@ -23,8 +22,7 @@ main {
 }
 
 #book-display {
-    background-color: whitesmoke;
-    /* opacity: 0.3; */
+   
     border-radius: 10px;
     margin: 0px auto;
 }
