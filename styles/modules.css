@@ -4,7 +4,7 @@
     background-size: cover;
     width: 65px;
     height: 65px;
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 #navbar>ul {
