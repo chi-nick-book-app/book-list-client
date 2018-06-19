@@ -11,7 +11,7 @@ function Book(rawDataObj) {
 }
 
 Book.all = [];
-Book();
+
 
 Book.prototype.toHtml = function () {
     let template = Handlebars.compile($('#book-list-template').text());
@@ -43,6 +43,8 @@ Book.fetchAll = () => {
          localStorage.setItem("bookData", JSON.stringify(data));
         }
       })
-    Book.fetchAll()
+    Book.fetchAll();
     }
   };
+
+  Book();

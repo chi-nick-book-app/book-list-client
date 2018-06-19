@@ -1,12 +1,30 @@
-body {
-    max-width: 640px;
+#header {
+    width: 700px;
+    background-color:#fff8;
+    border-radius: 10px;
     margin: 0px auto;
-    background-color: orange;
+    
 }
 
-body>div {
+body {
+    width: 640px;
+    background-color: orange;
+    height: 800px;
+    margin: 0px auto;
+}
+
+main {
     background-color: whitesmoke;
     opacity: 0.6;
     border-radius: 10px;
     height: 800px;
+    margin: 0px auto;
+    width: 700px;
+}
+
+#book-display {
+    background-color: whitesmoke;
+    opacity: 0.6;
+    border-radius: 10px;
+    margin: 0px auto;
 }

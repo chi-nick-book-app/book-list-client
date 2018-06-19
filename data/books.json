@@ -1,5 +1,6 @@
 [
     {
+        "book_id": 1,
         "title": "Dune",
         "author": "Frank Herbert",
         "isbn": "ISBN_13 9780441013593",
@@ -7,6 +8,7 @@
         "description": "Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny."
     },
     {
+        "book_id": 2,
         "title": "Dune",
         "author": "Frank Herbert",
         "isbn": "ISBN_13 9780441013593",
@@ -14,6 +16,7 @@
         "description": "Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny."
     },
     {
+        "book_id": 3,
         "title": "Dune",
         "author": "Frank Herbert",
         "isbn": "ISBN_13 9780441013593",
