@@ -31,6 +31,21 @@
     transform: scale(1.3);
 }
 
+#p-background {
+    color: white;
+    background-color: #444;
+    width: 90%;
+    margin: 0px auto;
+    /* border-top-left-radius: 8px; */
+    /* border-top-right-radius: 8px; */
+}
+
+#des-background {
+    background-color: burlywood;
+    width: 90%;
+    margin: 0px auto;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -40,7 +55,7 @@ a:hover {
     color: #6668;
 }
 
-#book-img {
+.book-img {
     display: block;
     background-image: url("https://books.google.com/books/content?id=B1hSG45JCX4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api");
     width: 250px;
@@ -58,13 +73,31 @@ a:hover {
     height: 30px;
 }
 
+#git-link {
+    display: block;
+    background-image: url("./logo/github-sign.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
 #footer-div {
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr;
 }
 
 footer ul {
+    text-align: center;
     grid-column: 3;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li:hover {
+    transition-duration: 300ms;
+    transform: scale(1.3);
 }
 
 footer p {

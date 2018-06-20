@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/reset.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/modules.css">
@@ -14,14 +14,18 @@
 
 
     <script id="book-list-template" type="text/x-handlebars-template">
-        <book class="clearfix" data-book="{{book}}" data-author="{{author}}">
+        <!-- <book class="clearfix" data-book="{{book}}" data-author="{{author}}"> -->
                 <div id="book-display">
 
-              
-            <h1>{{title}}</h1>
+            <h2>{{title}}</h2>
+            <img class="book-img"src="{{image_url}}" alt="{{title}}"/>
+            <div id="p-background"> 
             <p>By {{author}}</p>
             <p>{{isbn}}</p>
-            <p>{{{description}}}</p>
+            </div>
+            
+            <p id="des-background">Description: {{{description}}}</p>
+            <hr>
                 </div>
           <!-- <section class="description">{{description}}</section> -->
         </book>
@@ -63,25 +67,12 @@
     </header>
     <main>
         <hr>
-        <!-- <h1>Books App</h1> -->
-
-        <!-- <section class="container"> -->
-        <section>
-            <P>
-                <img id="book-img">
-            </P>
-            <p>Title: Dune</p>
-            <p>Author: Frank Herbert</p>
-            <p>ISBN: 9780441013593</p>
-            <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous
-                desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny</p>
-
-        </section>
-
-        <!-- <section class="container"> -->
-        <!-- </section> -->
+        <h1>Books App</h1>
+        <hr>
+        <hr>
         <section class="book-view" id="book-list">
         </section>
+        <section class="container"></section>
     </main>
     <hr>
     <footer>
