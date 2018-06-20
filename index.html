@@ -12,20 +12,32 @@
     <link rel="stylesheet" href="./styles/modules.css">
     <link rel="icon" href="./styles/logo/cflogo.png">
 
+
     <script id="book-list-template" type="text/x-handlebars-template">
-        <article class="clearfix" >
-            <div id="book-list">
-                <section class="book-view"></section>
-                <p><img/></p>
-                <p></p>
-                <p>{{Author}}</p>
-                <p>{{isbn}}</p>
-                <p>{{description}}</p>
-                
-            </div>
-        </article>
-    </script>
+        <book class="clearfix" data-book="{{book}}" data-author="{{author}}">
+                <div id="book-display">
+
+              
+            <h1>{{title}}</h1>
+            <p>By {{author}}</p>
+            <p>{{isbn}}</p>
+            <p>{{{description}}}</p>
+                </div>
+          <!-- <section class="description">{{description}}</section> -->
+        </book>
+      </script>
 </head>
+<!-- <section>
+        <P>
+            <img id="book-img">
+        </P>
+        <p>Title: Dune</p>
+        <p>Author: Frank Herbert</p>
+        <p>ISBN: 9780441013593</p>
+        <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous
+            desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny</p>
+
+    </section> -->
 
 <body>
     <header>
@@ -51,19 +63,25 @@
     </header>
     <main>
         <hr>
-        <h1>Books App</h1>
-        <div id="book-display">
-            <section>
-                <P>
-                    <img id="book-img">
-                </P>
-                <p>Title: Dune</p>
-                <p>Author: Frank Herbert</p>
-                <p>ISBN: 9780441013593</p>
-                <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous
-                    desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny</p>
+        <!-- <h1>Books App</h1> -->
 
-            </section>
+        <!-- <section class="container"> -->
+        <section>
+            <P>
+                <img id="book-img">
+            </P>
+            <p>Title: Dune</p>
+            <p>Author: Frank Herbert</p>
+            <p>ISBN: 9780441013593</p>
+            <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous
+                desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny</p>
+
+        </section>
+
+        <!-- <section class="container"> -->
+        <!-- </section> -->
+        <section class="book-view" id="book-list">
+        </section>
     </main>
     <hr>
     <footer>
@@ -85,16 +103,16 @@
     </footer>
 </body>
 
-<script src="./particles.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="scripts/models/booktest.js"></script>
-<script src="scripts/views/book-view.js"></script>
-<script src="scripts/views/error-view.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script src="./particles.js"></script>
 <script src="./app.js"></script>
+
+<script src="scripts/models/booktest.js"></script>
+<!-- <script src="scripts/views/book-view.js"></script> -->
+<!-- <script src="scripts/views/error-view.js"></script> -->
 <script>
-    Book.fetchAll(bookView.initIndexPage);
+    // Book.fetchAll(bookView.initIndexPage);
 </script>
 
 </html>
