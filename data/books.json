@@ -1,26 +1,26 @@
 [
     {
-        "book_id": 1,
-        "title": "Dune",
-        "author": "Frank Herbert",
-        "isbn": "ISBN_13 9780441013593",
-        "image_url": "http://books.google.com/books/content?id=B1hSG45JCX4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "description": "Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny."
-    },
-    {
-        "book_id": 2,
-        "title": "Dune",
-        "author": "Frank Herbert",
-        "isbn": "ISBN_13 9780441013593",
-        "image_url": "http://books.google.com/books/content?id=B1hSG45JCX4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "description": "Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny."
-    },
-    {
         "book_id": 3,
         "title": "Dune",
         "author": "Frank Herbert",
         "isbn": "ISBN_13 9780441013593",
         "image_url": "http://books.google.com/books/content?id=B1hSG45JCX4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
         "description": "Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny."
+    },
+    {
+        "book_id": 4,
+        "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+        "author": "Mark Manson",
+        "isbn": "ISBN 1925483851",
+        "image_url": "https://books.google.com/books/content?id=-kmXswEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73JaYjxk6NKKkyvJ11ahgleYL6B6gRbmApzTnvflVBBDGa0ST0Tq1E-8c3dJCVbZno-2AT7W5XF5buGgSafhNrMSKVGYI5rFdzPnzCNTRROdHxuOq-RPi9WC360ozTQbJy6d951",
+        "description": "In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be \"positive\" all the time so that we can truly become better, happier people."
+    },
+    {
+        "book_id": 5,
+        "title": "Hearthstone: Innkeepers Tavern Cookbook",
+        "author": "Chelsea Monroe-Cassel",
+        "isbn": "ISBN 1683831810",
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/416C0RSFPEL._SX337_BO1,204,203,200_.jpg",
+        "description": "Sheathe your sword, draw your cards, and summon more than 50 delicious bites and cocktails inspired by Blizzard Entertainment’s smash-hit digital card game.From the best-selling author of World of Warcraft: The Official Cookbook and A Feast of Ice and Fire: The Official Game of Thrones Companion Cookbook comes a new collection of delicious recipes."
     }
 ]
