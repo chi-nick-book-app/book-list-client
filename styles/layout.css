@@ -1,31 +1,39 @@
 #header {
-    width: 700px;
-    background-color:#fff8;
+    width: 480px;
+    background-color: #fff8;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
     margin: 0px auto;
-    
+    box-shadow: 10px 10px 10px #1117;
+}
+
+hr {
+    visibility: hidden;
 }
 
 body {
-  
     background-color: orange;
-    height: 800px;
     margin: 0px auto;
+    /* width: 600px; */
 }
 
 main {
     background-color: #fff8;
-    border-radius: 10px;
-    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     height: 800px;
     margin: 0px auto;
-    width: 700px;
+    width: 480px;
+    box-shadow: 10px 10px 10px #1117;
 }
 
 #book-display {
-   
     border-radius: 10px;
+    margin: 0px auto;
+}
+
+footer {
+    display: block;
+    width: 480px;
     margin: 0px auto;
 }

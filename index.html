@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"> -->
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/modules.css">
     <link rel="icon" href="./styles/logo/cflogo.png">
 
     <script id="book-list-template" type="text/x-handlebars-template">
-        <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
+        <article class="clearfix" >
             <div id="book-list">
-                <section class="book-view">{{{body}}}</section>
+                <section class="book-view"></section>
                 <p><img/></p>
                 <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>{{Author}}</p>
+                <p>{{isbn}}</p>
+                <p>{{description}}</p>
                 
             </div>
         </article>
@@ -27,14 +28,12 @@
 </head>
 
 <body>
-    <div id="particles-js"></div>
+    <header>
+        <div id="particles-js"></div>
 
         <div id=header>
-
-
             <h1>
                 <span id="logo"></span> LAB 11-HOME PAGE</h1>
-
             <div id=navbar>
                 <ul>
                     <li>
@@ -49,27 +48,41 @@
                 </ul>
             </div>
         </div>
-        <main>
-            <div>
-                <h1>Books App</h1>
+    </header>
+    <main>
+        <hr>
+        <h1>Books App</h1>
+        <div id="book-display">
+            <section>
+                <P>
+                    <img id="book-img">
+                </P>
+                <p>Title: Dune</p>
+                <p>Author: Frank Herbert</p>
+                <p>ISBN: 9780441013593</p>
+                <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous
+                    desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny</p>
 
-            </div>
-            <div id="book-display">
-                <section>
-                    <P>
-                        <img id="book-img">
-                    </P>
-                    <p>Title: Dune</p>
-                    <p>Author: Frank Herbert</p>
-                    <p>ISBN: 9780441013593</p>
-                    <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on
-                        a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most
-                        unexpected destiny</p>
-
-                </section>
-        </main>
-
-        
+            </section>
+    </main>
+    <hr>
+    <footer>
+        <div id="footer-div">
+            <p>&copy;Code Name: FML 2018</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span id="fb-link"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span id="git-link"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 <script src="./particles.js"></script>

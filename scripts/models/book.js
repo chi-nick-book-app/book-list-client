@@ -1,12 +1,12 @@
 'use strict';
 
 
-function Book(rawDataObj) {
-  this.title = rawDataObj.title;
-  this.author = rawDataObj.author;
-  this.isbn = rawDataObj.isbn;
-  this.image_url = rawDataObj.image_url;
-  this.description = rawDataObj.description;
+function Book(bookObj) {
+  this.title = bookObj.title;
+  this.author = bookObj.author;
+  this.isbn = bookObj.isbn;
+  this.image_url = bookObj.image_url;
+  this.description = bookObj.description;
   // this.all = [];
 }
 
