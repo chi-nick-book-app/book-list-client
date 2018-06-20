@@ -2,9 +2,9 @@
 
 
 
-  var app = app||{};
+//   var app = app||{};
 
-  (function(module){
- let productionAPiUrl
+//   (function(module){
+//  let productionAPiUrl
 
-  });
+//   });
