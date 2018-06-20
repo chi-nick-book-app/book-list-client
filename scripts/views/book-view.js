@@ -1,19 +1,19 @@
 'use strict';
 
-let bookView = {};
+// let bookView = {};
 
 
 
-bookView.initNewArticlePage = () => {
-    $('.book-view').show();
+// bookView.initNewArticlePage = () => {
+//     $('.book-view').show();
    
 
 
 
-}
+// }
 
-bookView.initIndexPage = () => {
-    Book.all.forEach(article => {
-        $('#book').append(article.toHtml())
-    });
-}
+// bookView.initIndexPage = () => {
+//     Book.all.forEach(article => {
+//         $('#book').append(article.toHtml())
+//     });
+// }
