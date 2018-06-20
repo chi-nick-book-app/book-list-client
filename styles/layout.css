@@ -21,7 +21,7 @@ main {
     background-color: #fff8;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    height: 800px;
+    height: auto;
     margin: 0px auto;
     width: 480px;
     box-shadow: 10px 10px 10px #1117;

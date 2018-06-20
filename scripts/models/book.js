@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 // let bookView = {};
 
 
@@ -64,22 +64,22 @@
 
 /////START OVER\\\\\
 
-var app = app || {};
+// var app = app || {};
 
 
-function errorCallback(err) {
-  console.error(err);
-  module.errorView.initErrorPage(err);
-}
+// function errorCallback(err) {
+//   console.error(err);
+//   module.errorView.initErrorPage(err);
+// }
 
-function Book(bookObj) {
-  Object.keys(bookObj).forEach(key => {
-    this[key] = bookObj[key];
-  }, this);
-}
-Book.prototype.toHtml = function () {
-  var template = Handlebars.compile($('#book-list-template').text());
-  return template(this);
-}
+// function Book(bookObj) {
+//   Object.keys(bookObj).forEach(key => {
+//     this[key] = bookObj[key];
+//   }, this);
+// }
+// Book.prototype.toHtml = function () {
+//   var template = Handlebars.compile($('#book-list-template').text());
+//   return template(this);
+// }
 
 
