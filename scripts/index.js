@@ -4,14 +4,9 @@
 
 // let app = app || {};
 
+let bookView = {};
+let errorView = {};
 
-Book.prototype.toHtml = function () {
-    var template = Handlebars.compile($('#book-list-template').text());
-    return template(this);
-}
-
-Book.all = [];
-Book.limited = [];
 
 
 bookView.initIndexPage = () => {
@@ -35,17 +30,28 @@ errorView.initErrorPage = (err) => {
 //sort author not nesscary
 Book.loadAll = rows => {
     Book.all = rows.map((info) => new Book(info));
-  }
-  
-  Book.fetchAll = callback => {
+}
+
+Book.fetchAll = callback => {
     // $.get('./data/books.json')
     $.get('https://chi-nick-booklist.herokuapp.com/api/v1/books')
-      .then(results => {
-        Book.loadAll(results);
-        callback();
-      })
-  };
-  $(document).ready(function () {
+        .then(results => {
+            Book.loadAll(results);
+            callback();
+        })
+};
+
+
+Book.fetchOne = callback => {
+    // $.get('./data/books.json')
+    $.get('https://chi-nick-booklist.herokuapp.com/api/v1/books/:id')
+        .then(results => {
+            Book.loadAll(results);
+            callback();
+        })
+};
+
+
+$(document).ready(function () {
     Book.fetchAll(bookView.initIndexPage);
 });
-  
