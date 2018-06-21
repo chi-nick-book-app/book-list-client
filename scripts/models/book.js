@@ -1,9 +1,13 @@
 'use strict';
 
-let bookView = {};
-let errorView = {};
+// let bookView = {};
+// let errorView = {};
 
 // let app = app || {};
+
+
+Book.all = [];
+Book.limited = [];
 
 
 function Book(bookObj) {
