@@ -32,6 +32,14 @@ Book.fetchAll = callback => {
     })
 };
 
+Book.fetchLimited = callback => {
+ $.get('https://chi-nick-booklist.herokuapp.com/api/v1/books')
+   .then(results => {
+     Book.loadLimited(results);
+     callback();
+   })
+}
+
 bookView.initIndexPage = () => {
   $('.container').hide();
   $('.book-view').show();
@@ -53,14 +61,7 @@ function errorCallback(errorObj) {
   errorView.initErrorPage(errorObj);
 }
 
-Book.fetchLimited = callback => {
-   $.get('./data/books.json')
-  $.get('https://chi-nick-booklist.herokuapp.com/api/v1/books')
-    .then(results => {
-      Book.loadLimited(results);
-      callback();
-    })
-}
+
 
 $(document).ready(function () {
   Book.fetchAll(bookView.initIndexPage);

@@ -14,7 +14,7 @@ hr {
 body {
     background-color: orange;
     margin: 0px auto;
-    /* width: 600px; */
+    height: auto;
 }
 
 main {
