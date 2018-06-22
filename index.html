@@ -14,34 +14,35 @@
 
 
     <script id="book-list-template" type="text/x-handlebars-template">
-        <!-- <book class="clearfix" data-book="{{book}}" data-author="{{author}}"> -->
-                <div id="book-display">
-
-            <h2>{{title}}</h2>
-            <img class="book-img"src="{{image_url}}" alt="{{title}}"/>
-            <div id="p-background"> 
-            <p>By {{author}}</p>
-            <p>{{isbn}}</p>
-            </div>
-            
-            <p id="des-background">Description: {{{description}}}</p>
-            <hr>
+        <div id="book-display">
+                <h2>{{title}}</h2>
+                <img class="book-img" src="{{image_url}}" alt="{{title}}" />
+                <div id="p-background">
+                    <p>By {{author}}</p>
+                    <p>{{isbn}}</p>
                 </div>
-          <!-- <section class="description">{{description}}</section> -->
-        </book>
+                <p id="des-background">Description: {{{description}}}</p>
+                <hr>
+               
+            </div>
       </script>
-</head>
-<!-- <section>
-        <P>
-            <img id="book-img">
-        </P>
-        <p>Title: Dune</p>
-        <p>Author: Frank Herbert</p>
-        <p>ISBN: 9780441013593</p>
-        <p>Description:Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous
-            desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny</p>
 
-    </section> -->
+    <script id="book-detail-template" type="text/x-handlebars-template">
+        <div id="book-detail-display">
+                <h2>{{title}} Detail</h2>
+                <img class="book-img" src="{{image_url}}" alt="{{title}}" />
+                <div id="p-background">
+                    <p>By {{author}}</p>
+                    <p>{{isbn}}</p>
+                </div>
+                <p id="des-background">Description: {{{description}}}</p>
+                <hr>
+            </div>
+
+    </script>
+
+</head>
+
 
 <body>
     <header>
@@ -53,10 +54,10 @@
             <div id=navbar>
                 <ul>
                     <li>
-                        <a href="#" class="icon-home">BOOKS APP</a>
+                        <a href="#" id="books-app"class="icon-home">BOOKS APP</a>
                     </li>
                     <li>
-                        <a href="#" class="icon-home">ABOUT</a>
+                        <a href="#" id="insert-book"class="icon-home">INSERT BOOK</a>
                     </li>
                     <li>
                         <a href="#" class="icon-home">CONTACT US</a>
@@ -67,12 +68,40 @@
     </header>
     <main>
         <hr>
-        <h1>Books App</h1>
         <hr>
         <hr>
         <section class="book-view" id="book-list">
+                <h1>Books App</h1>
         </section>
-        <section class="container"></section>
+        <section class="container book-detail" id="book-detail">
+        </section>
+        <section id="form-view" class="container form">
+            <form>
+                <fieldset>
+                    <h1>ADD A NEW BOOK </h1>
+                    <label>Title:<br>
+                        <input id="title" type="text">
+                    </label>
+                    <br>
+                    <label>Author:<br>
+                        <input id="author" type="text">
+                        <br>
+                    </label>
+                    <label>ISBN:<br>
+                        <input id="isbn" type="text">
+                        <br>
+                    </label>
+                    <label>Description:<br>
+                        <textarea id="description" type="text"></textarea>
+                        <br>
+                    </label>
+                </fieldset>
+                <button id="thebutton">sumbit</button>
+                <button>delete</button>
+            </form>
+
+        </section>
+
     </main>
     <hr>
     <footer>
@@ -96,12 +125,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-<script src="./particles.js"></script>
-<script src="./app.js"></script>
+<!-- <script src="./particles.js"></script> -->
+<!-- <script src="./app.js"></script> -->
 
 <!-- <script src="scripts/models/booktest.js"></script> -->
 <script src="scripts/models/book.js"></script>
 <script src="scripts/index.js"></script>
+<script src="scripts/views/book-view.js"></script>
 <!-- <script></script> -->
 <!-- <script src="scripts/views/error-view.js"></script> -->
 
