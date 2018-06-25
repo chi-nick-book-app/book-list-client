@@ -8,15 +8,6 @@ let bookView = {};
 let errorView = {};
 
 
-
-// bookView.initIndexPage = () => {
-//     // $('.container').hide();
-//     $('.book-view').show();
-//     Book.all.forEach(bookApp => $('#book-list').append(bookApp.toHtml()));
-// }
-
-
-
 errorView.initErrorPage = (err) => {
     // $('.container').hide();
     $('.error-view').show();
@@ -32,6 +23,7 @@ Book.loadAll = rows => {
     Book.all = rows.map((info) => new Book(info));
 }
 
+//load one book 
 Book.loadOne = (info) => {
     Book.one[0] = new Book(info);
 
@@ -60,5 +52,5 @@ Book.fetchOne = callback => {
 
 $(document).ready(function () {
     Book.fetchAll(bookView.initIndexPage);
-    Book.fetchOne(bookView.initOnebook);
+    // Book.fetchOne(bookView.initOnebook);
 });

@@ -54,10 +54,10 @@
             <div id=navbar>
                 <ul>
                     <li>
-                        <a href="#" id="books-app"class="icon-home">BOOKS APP</a>
+                        <a href="#" id="books-app" class="icon-home">BOOKS APP</a>
                     </li>
                     <li>
-                        <a href="#" id="insert-book"class="icon-home">INSERT BOOK</a>
+                        <a href="#" id="insert-book" class="icon-home">INSERT BOOK</a>
                     </li>
                     <li>
                         <a href="#" class="icon-home">CONTACT US</a>
@@ -71,7 +71,7 @@
         <hr>
         <hr>
         <section class="book-view" id="book-list">
-                <h1>Books App</h1>
+            <h1>Books App</h1>
         </section>
         <section class="container book-detail" id="book-detail">
         </section>
@@ -79,25 +79,35 @@
             <form>
                 <fieldset>
                     <h1>ADD A NEW BOOK </h1>
-                    <label>Title:<br>
+                    <label>Title:
+                        <br>
                         <input id="title" type="text">
                     </label>
                     <br>
-                    <label>Author:<br>
+                    <label>Author:
+                        <br>
                         <input id="author" type="text">
                         <br>
                     </label>
-                    <label>ISBN:<br>
+                    <label>ISBN:
+                        <br>
                         <input id="isbn" type="text">
                         <br>
                     </label>
-                    <label>Description:<br>
+                    <label>Image URL:
+                        <br>
+                        <input id="image-url" type="text">
+                        <br>
+                    </label>
+
+                    <label>Description:
+                        <br>
                         <textarea id="description" type="text"></textarea>
                         <br>
                     </label>
                 </fieldset>
-                <button id="thebutton">sumbit</button>
-                <button>delete</button>
+                <button id="thebutton" type="submit">sumbit</button>
+                <button id="delete">delete</button>
             </form>
 
         </section>
@@ -128,7 +138,6 @@
 <!-- <script src="./particles.js"></script> -->
 <!-- <script src="./app.js"></script> -->
 
-<!-- <script src="scripts/models/booktest.js"></script> -->
 <script src="scripts/models/book.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/views/book-view.js"></script>
