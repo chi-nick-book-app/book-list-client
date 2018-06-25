@@ -11,8 +11,7 @@ bookView.initIndexPage = () => {
 }
 bookView.initOnebook = () => {
     // $('.container').hide();
-    $('.book-view').show()
-    // Book.one = () => $('#book-detail').append(bookApp.toHtml());
+    $('.book-view').show();
     Book.one.forEach(detail => $('#book-detail').append(detail.toHtml()));
 
 }
